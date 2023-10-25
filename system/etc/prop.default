@@ -1,0 +1,16 @@
+#
+# ADDITIONAL_DEFAULT_PROPERTIES
+#
+ro.secure=1
+security.perf_harden=1
+ro.adb.secure=1
+ro.allow.mock.location=0
+ro.debuggable=0
+#
+# BOOTIMAGE_BUILD_PROPERTIES
+#
+ro.bootimage.build.date=2018年 03月 28日 星期三 09:14:35 CST
+ro.bootimage.build.date.utc=1522199675
+ro.bootimage.build.fingerprint=gm/shamrock/shamrock:8.0.0/OSR18H/315:user/release-keys
+persist.sys.usb.config=none
+
