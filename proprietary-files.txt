@@ -1,4 +1,3 @@
-
 # ADSP
 vendor/bin/adsprpcd
 vendor/lib/libadsprpc.so
@@ -7,8 +6,6 @@ vendor/lib/libfastcvadsp_stub.so
 vendor/lib/libfastcvopt.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libsdsprpc.so
-
-# ADSP-Modules
 vendor/lib/rfsa/adsp/libadsp_fd_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
@@ -45,21 +42,13 @@ vendor/lib/libaudcal.so
 vendor/lib/libaudioalsa.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libdrc.so
+vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib/libtinycompress_vendor.so
 vendor/lib/soundfx/libaudiopreprocessing.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
-
-# Audio-Hardware
-vendor/bin/hw/android.hardware.audio@2.0-service
-vendor/etc/init/android.hardware.audio@2.0-service.rc
-vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so
-vendor/lib/hw/android.hardware.audio@2.0-impl.so
-vendor/lib/hw/audio.primary.default.so
-vendor/lib/hw/audio.r_submix.default.so
-vendor/lib/hw/audio.usb.default.so
 
 # Bluetooth
 vendor/bin/btnvtool
@@ -119,29 +108,9 @@ vendor/lib/libxml.so
 
 # Camera
 lib/libchromaflash.so
-vendor/bin/hw/android.hardware.camera.provider@2.4-service
-vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
-vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
-vendor/lib/libchromaflash.so
-vendor/lib/libflash_pmic.so
-vendor/lib/libjpegdhw.so
-vendor/lib/libjpegdmahw.so
-vendor/lib/libjpegehw.so
-vendor/lib/libmmcamera_sonyimx135_eeprom.so
-vendor/lib/libmmjpeg.so
-vendor/lib/libmmqjpegdma.so
-vendor/lib/libmmqjpeg_codec.so
-vendor/lib/liboptizoom.so
-vendor/lib/libqomx_jpegdec.so
-vendor/lib/libqomx_jpegenc.so
-vendor/lib/libqomx_jpegenc_pipe.so
-vendor/lib/libqvrservice_client.so
-vendor/lib/libremosaic_daemon.so
-vendor/lib/libseemore.so
-vendor/lib/libubifocus.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so
-
-# Camera-actuators
+vendor/bin/mm-qcamera-daemon
+vendor/etc/qvr/qvrservice_6dof_config.xml
+vendor/etc/qvr/qvrservice_config.txt
 vendor/lib/libactuator_ad5816g.so
 vendor/lib/libactuator_ad5823.so
 vendor/lib/libactuator_ak7345.so
@@ -160,11 +129,7 @@ vendor/lib/libactuator_lc898212xd_qc2002.so
 vendor/lib/libactuator_lc898217xc.so
 vendor/lib/libactuator_pseudo.so
 vendor/lib/libactuator_rohm_bu64243gwz.so
-
-# Camera-bin
-vendor/bin/mm-qcamera-daemon
-
-# Camera-chromatix
+vendor/lib/libchromaflash.so
 vendor/lib/libchromatix_csidtg_common.so
 vendor/lib/libchromatix_csidtg_cpp_preview.so
 vendor/lib/libchromatix_csidtg_postproc.so
@@ -1142,15 +1107,10 @@ vendor/lib/libchromatix_s5k3p8sp_cpp_video.so
 vendor/lib/libchromatix_s5k3p8sp_postproc.so
 vendor/lib/libchromatix_s5k3p8sp_preview.so
 vendor/lib/libchromatix_s5k3p8sp_snapshot.so
-
-# Camera-configs
-vendor/etc/qvr/qvrservice_6dof_config.xml
-vendor/etc/qvr/qvrservice_config.txt
-
-# Camera-ois
-vendor/lib/libois_lc898122.so
-
-# Camera-sensors
+vendor/lib/libflash_pmic.so
+vendor/lib/libjpegdhw.so
+vendor/lib/libjpegdmahw.so
+vendor/lib/libjpegehw.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_dcrf.so
@@ -1269,6 +1229,7 @@ vendor/lib/libmmcamera_s5k3m2xm.so
 vendor/lib/libmmcamera_s5k3m2xx.so
 vendor/lib/libmmcamera_s5k3p3sm.so
 vendor/lib/libmmcamera_s5k3p8sp.so
+vendor/lib/libmmcamera_sonyimx135_eeprom.so
 vendor/lib/libmmcamera_sony_imx214_eeprom.so
 vendor/lib/libmmcamera_sony_imx298_eeprom.so
 vendor/lib/libmmcamera_sony_imx378_eeprom.so
@@ -1290,22 +1251,43 @@ vendor/lib/libmmcamera_truly_cmb433_eeprom.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_ubifocus_lib.so
-
-# Configstore
-vendor/bin/hw/android.hardware.configstore@1.0-service
-vendor/etc/init/android.hardware.configstore@1.0-service.rc
+vendor/lib/libmmjpeg.so
+vendor/lib/libmmqjpegdma.so
+vendor/lib/libmmqjpeg_codec.so
+vendor/lib/libois_lc898122.so
+vendor/lib/liboptizoom.so
+vendor/lib/libqomx_jpegdec.so
+vendor/lib/libqomx_jpegenc.so
+vendor/lib/libqomx_jpegenc_pipe.so
+vendor/lib/libqvrservice_client.so
+vendor/lib/libremosaic_daemon.so
+vendor/lib/libseemore.so
+vendor/lib/libubifocus.so
+vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so
 
 # DPM
 lib/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so
 
 # DRM
+etc/firmware/widevine.b00
+etc/firmware/widevine.b01
+etc/firmware/widevine.b02
+etc/firmware/widevine.b03
+etc/firmware/widevine.flist
+etc/firmware/widevine.mdt
 vendor/bin/qseecomd
+vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so
+vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so
+vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so
+vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so
+vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so
+vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
 vendor/lib/libGPreqcancel.so
 vendor/lib/libGPreqcancel_svc.so
-vendor/lib/libGPTEE_vendor.so
 vendor/lib/libqisl.so
 vendor/lib/libQSEEComAPI.so
 vendor/lib/librpmb.so
@@ -1316,53 +1298,7 @@ vendor/lib/libsi.so
 vendor/lib/libssd.so
 vendor/lib/libStDrvInt.so
 vendor/lib/libtzdrmgenprov.so
-
-# DRM-HDCP
-vendor/lib/libmm-hdcpmgr.so
-
-# DRM-Hardware
-vendor/bin/hw/android.hardware.drm@1.0-service
-vendor/bin/hw/android.hardware.drm@1.0-service.widevine
-vendor/etc/init/android.hardware.drm@1.0-service.rc
-vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
-vendor/lib/hw/android.hardware.drm@1.0-impl.so
-
-# DRM-Qteeconnector
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib/libQTEEConnector_vendor.so
-vendor/lib/vendor.qti.hardware.qteeconnector@1.0_vendor.so
-
-# DRM-Widevine
-etc/firmware/widevine.b00
-etc/firmware/widevine.b01
-etc/firmware/widevine.b02
-etc/firmware/widevine.b03
-etc/firmware/widevine.flist
-etc/firmware/widevine.mdt
 vendor/lib/libwvhidl.so
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
-vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so
-vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so
-vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so
-vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so
-vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so
-
-# Display-Hardware
-vendor/bin/hw/android.hardware.graphics.allocator@2.0-service
-vendor/bin/hw/android.hardware.graphics.composer@2.1-service
-vendor/bin/hw/android.hardware.memtrack@1.0-service
-vendor/etc/init/android.hardware.graphics.allocator@2.0-service.rc
-vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc
-vendor/etc/init/android.hardware.memtrack@1.0-service.rc
-vendor/lib/hw/android.hardware.graphics.allocator@2.0-impl.so
-vendor/lib/hw/android.hardware.graphics.composer@2.1-impl.so
-vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so
-vendor/lib/hw/android.hardware.memtrack@1.0-impl.so
-vendor/lib/hw/gralloc.default.so
-vendor/lib/vendor.display.config@1.0_vendor.so
 
 # ESE-Powermanager
 lib/vendor.qti.esepowermanager@1.0.so
@@ -1457,6 +1393,9 @@ vendor/lib/libevent_observer.so
 vendor/lib/libflp.so
 vendor/lib/libgdtap.so
 vendor/lib/libgeofence.so
+vendor/lib/libgnss.so
+vendor/lib/libgnsspps.so
+vendor/lib/libgps.utils.so
 vendor/lib/libizat_client_api.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
@@ -1479,15 +1418,7 @@ vendor/lib/libxtwifi_ulp_adaptor.so
 vendor/lib/lib_drplugin_server.so
 vendor/lib/vendor.qti.gnss@1.0_vendor.so
 
-# GPS-Hardware
-vendor/lib/libgnss.so
-vendor/lib/libgnsspps.so
-vendor/lib/libgps.utils.so
-
 # Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib/hw/gatekeeper.msm8952.so
 
 # Graphics
@@ -1514,20 +1445,11 @@ vendor/lib/libOpenCL.so
 vendor/lib/libRSDriver_adreno.so
 vendor/lib/librs_adreno.so
 vendor/lib/librs_adreno_sha1.so
-
-# Health
-vendor/bin/hw/android.hardware.health@1.0-service
-vendor/etc/init/android.hardware.health@1.0-service.rc
-vendor/lib/hw/android.hardware.health@1.0-impl.so
+vendor/lib/vendor.display.config@1.0_vendor.so
 
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@3.0-service
-vendor/etc/init/android.hardware.keymaster@3.0-service.rc
-vendor/lib/hw/android.hardware.keymaster@3.0-impl.so
 vendor/lib/hw/keystore.msm8952.so
 vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeystore-engine-wifi-hidl.so
-vendor/lib/libkeystore-wifi-hidl.so
 
 # Latency
 vendor/lib/vendor.qti.hardware.data.latency@1.0_vendor.so
@@ -1538,7 +1460,6 @@ vendor/etc/init/android.hardware.light@2.0-service.rc
 vendor/lib/hw/android.hardware.light@2.0-impl.so
 
 # Listen
-vendor/lib/hw/android.hardware.soundtrigger@2.0-impl.so
 vendor/lib/libadpcmdec.so
 vendor/lib/liblistensoundmodel2.so
 
@@ -1601,15 +1522,18 @@ vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 
 # Postprocessing
+-vendor/app/colorservice/colorservice.apk
+vendor/bin/mm-pp-daemon
 vendor/lib/libdisp-aba.so
+vendor/lib/libmm-als.so
+vendor/lib/libmm-disp-apis.so
+vendor/lib/libmm-dspp-utils.so
+vendor/lib/libmm-qdcm-diag.so
+vendor/lib/libmm-qdcm.so
 vendor/lib/vendor.display.color@1.0_vendor.so
 vendor/lib/vendor.display.postproc@1.0_vendor.so
 
 # Power-Hardware
-vendor/bin/hw/android.hardware.power@1.0-service
-vendor/etc/init/android.hardware.power@1.0-service.rc
-vendor/lib/hw/android.hardware.power@1.0-impl.so
-vendor/lib/hw/power.default.so
 vendor/lib/hw/power.qcom.so
 
 # QMI
@@ -1726,27 +1650,17 @@ vendor/bin/subsystem_ramdump
 vendor/lib/libSubSystemShutdown.so
 vendor/lib/libsubsystem_control.so
 
-# Sensor-calibrate
--vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
-vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
-
-# Sensor-configs
-vendor/etc/sensors/sensor_def_qcomdev.conf
-
 # Sensors
-vendor/bin/hw/android.hardware.sensors@1.0-service
 vendor/bin/sensors.qcom
-vendor/etc/init/android.hardware.sensors@1.0-service.rc
+vendor/etc/sensors/sensor_def_qcomdev.conf
+-vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 vendor/lib/hw/activity_recognition.msm8952.so
-vendor/lib/hw/android.hardware.sensors@1.0-impl.so
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
 vendor/lib/libsensor_user_cal.so
 vendor/lib/sensors.ssc.so
 vendor/lib/sensor_calibrate.so
-
-# TUI
-vendor/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Thermal
 vendor/bin/thermal-engine
@@ -1774,6 +1688,17 @@ vendor/etc/hbtp/qtc800s_dsp.bin
 vendor/lib/libhbtpclient.so
 vendor/lib/libhbtpdsp.so
 vendor/lib/libhbtpfrmwk.so
+
+# Trusted Execution Environment connector
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
+vendor/lib/libGPTEE_vendor.so
+vendor/lib/libQTEEConnector_vendor.so
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0_vendor.so
+
+# TUI
+vendor/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so
 
 # Vibrator
 vendor/bin/hw/android.hardware.vibrator@1.0-service
@@ -1827,7 +1752,6 @@ vendor/lib/vendor.qti.hardware.wifi.supplicant@1.0_vendor.so
 
 # Misc
 -vendor/app/CABLService/CABLService.apk
--vendor/app/colorservice/colorservice.apk
 vendor/app/Qmmi/lib/arm/libmmi_jni.so
 -vendor/app/Qmmi/Qmmi.apk
 -vendor/app/SecProtect/SecProtect.apk
@@ -1850,7 +1774,6 @@ vendor/bin/hw/rild
 vendor/bin/icm
 vendor/bin/ipacm-diag
 vendor/bin/mdtpd
-vendor/bin/mm-pp-daemon
 vendor/bin/mm-qjpeg-dec-test
 vendor/bin/mm-qjpeg-enc-test
 vendor/bin/mm-qomx-idec-test
@@ -1891,11 +1814,6 @@ vendor/lib/libllvm-qgl.so
 vendor/lib/libmdtp.so
 vendor/lib/libmdtpdemojni.so
 vendor/lib/libmdtp_crypto.so
-vendor/lib/libmm-als.so
-vendor/lib/libmm-disp-apis.so
-vendor/lib/libmm-dspp-utils.so
-vendor/lib/libmm-qdcm-diag.so
-vendor/lib/libmm-qdcm.so
 vendor/lib/libmmi.so
 vendor/lib/libmmi_jni.so
 vendor/lib/libnetfilter_conntrack.so
